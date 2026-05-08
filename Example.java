@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 
 public class Example {
+
     public static void main(String[] args){
 
         // need one scanner object to make Java interactive 
@@ -30,10 +31,75 @@ public class Example {
 
         // write a program that take two #s from user and sums their square root
 
-        int num1 = scanner.nextLine()
+        /*
+        int first = Integer.valueOf(scanner.nextLine());
+        int second = Integer.valueOf(scanner.nextLine());
+        double sqrt1 = Math.sqrt(first);
+        double sqrt2 = Math.sqrt(second);
+        System.out.println(sqrt1 + sqrt2);
+        */
+
+        //Write a program that reads an integer from the user. 
+        //If the number is less than 0, the program prints the given integer multiplied by -1. 
+        //In all other cases, the program prints the number itself. 
+
+        /*
+        int num = Integer.valueOf(scanner.nextLine());
+        
+        if (num < 0){
+            System.out.println(num * -1);
+        } else {
+            System.out.println(num);
+        }
+        /*
+
+        int num1 = Integer.valueOf(scanner.nextLine());
+        int num2 = Integer.valueOf(scanner.nextLine());
+
+        if (num1 > num2){
+
+            System.out.printf("%d is greater than the %d", num1, num2);
+        } if (num1< num2){
+            System.out.printf("%d is greater than the %d", num2, num1);
+        } else{
+            System.out.printf("%d is equal to %d", num1, num2);
+        }*/
+
+        printTriangles(4);
 
 
-
+       
+       
 
     }
+
+    // Advanced astrology (3 parts)
+
+
+
+    public static void printSpaces(){
+
+        System.out.println(); //move to next line
+    }
+
+    public static void printStars(int number){
+
+        int i = 0;
+
+        while (i!= number){
+            System.out.print("*");
+            i++;
+
+        }
+        printSpaces();
+
+        
+
+    }
+
+    public static void printTriangle(int size){
+        printStars();
+        printSpaces();
+    }
+
 }
