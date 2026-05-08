@@ -64,42 +64,33 @@ public class Example {
         } else{
             System.out.printf("%d is equal to %d", num1, num2);
         }*/
-
         printTriangles(4);
-
-
-       
-       
 
     }
 
     // Advanced astrology (3 parts)
 
-
-
-    public static void printSpaces(){
-
-        System.out.println(); //move to next line
-    }
-
     public static void printStars(int number){
 
         int i = 0;
 
-        while (i!= number){
+        while (i < number){
             System.out.print("*");
             i++;
 
         }
-        printSpaces();
+        System.out.println(); //move to next line
 
         
 
     }
 
-    public static void printTriangle(int size){
-        printStars();
-        printSpaces();
+    public static void printTriangles(int size){
+        int row = 1;
+        while (row <= size){
+            printStars(row);
+            row++;
+        }
     }
 
 }
