@@ -71,7 +71,8 @@ public class Example {
     // Advanced astrology (3 parts)
 
     public static void printStars(int number){
-
+        // i - controls how many stars get printed on that specific line
+        // i resets to 0 everytime the method is called 
         int i = 0;
 
         while (i < number){
@@ -86,6 +87,7 @@ public class Example {
     }
 
     public static void printTriangles(int size){
+        // row - controls which line you are on
         int row = 1;
         while (row <= size){
             printStars(row);
