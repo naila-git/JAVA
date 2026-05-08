@@ -64,11 +64,22 @@ public class Example {
         } else{
             System.out.printf("%d is equal to %d", num1, num2);
         }*/
-        printTriangles(4);
+        printChristmasTree(10);
 
     }
 
     // Advanced astrology (3 parts)
+    public static void printSpaces(int number){
+
+        int i = 0;
+
+        while (i < number){
+            System.out.print(" ");
+            i++;
+
+        }
+
+    }
 
     public static void printStars(int number){
         // i - controls how many stars get printed on that specific line
@@ -86,11 +97,12 @@ public class Example {
 
     }
 
-    public static void printTriangles(int size){
+    public static void printChristmasTree(int size){
         // row - controls which line you are on
         int row = 1;
         while (row <= size){
-            printStars(row);
+            printSpaces(size - row);
+            printStars((2*row)-1);
             row++;
         }
     }
